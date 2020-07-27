@@ -32,6 +32,7 @@ Font.register({
 // Create styles
 const styles = StyleSheet.create({
   page: {
+    position: 'relative',
     padding: '62px 60px 50px 60px',
     flexDirection: 'column',
     backgroundColor: '#FFF',
@@ -98,8 +99,8 @@ const styles = StyleSheet.create({
   },
 
   sectionProgress: {
-    paddingTop: '30',
-    paddingBottom: '10',
+    paddingTop: '31',
+    paddingBottom: '12',
 
     item: {
       marginBottom: '19',
@@ -237,8 +238,8 @@ const styles = StyleSheet.create({
   },
 
   sectionFeedback: {
-    paddingTop: '24pt',
-    paddingBottom: '24pt',
+    paddingTop: '26pt',
+    paddingBottom: '23pt',
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
@@ -249,32 +250,36 @@ const styles = StyleSheet.create({
       alignItems: 'center',
 
       title: {
+        marginBottom: '40pt',
         margin: '0 18pt',
         fontFamily: 'Roboto',
         fontSize: '8pt',
         fontWeight: 500,
+        letterSpacing: '0.15',
       },
 
       img: {
-        width: '64pt',
-        height: '64pt',
+        width: '68pt',
+        height: '68pt',
       },
     },
 
     divider: {
       margin: '0 14pt',
-      marginTop: '10pt',
+      marginTop: '12pt',
       padding: '6pt',
+      paddingTop: '7pt',
       fontFamily: 'Roboto',
       fontWeight: 400,
       fontSize: '7',
       color: '#767676',
+      letterSpacing: '0.15',
       borderTop: '2pt solid #EAEEEF',
     },
   },
 
   sectionDevelopment: {
-    padding: '40pt',
+    padding: '38pt',
     paddingBottom: '10pt',
     img: {
       width: '100%',
@@ -282,6 +287,10 @@ const styles = StyleSheet.create({
   },
 
   footer: {
+    position: 'absolute',
+    bottom: '0',
+    left: '0',
+    width: '100%',
     marginTop: '32pt',
     position: 'relative',
     fontFamily: 'Roboto',
@@ -358,7 +367,9 @@ const MyDocument = () => (
             style={styles.sectionFeedback.item.img}
             source={'/circ-progress-red.png'}
           />
-          <Text style={styles.sectionFeedback.item.title}>Given feedback</Text>
+          <Text style={styles.sectionFeedback.item.title}>
+            Received feedback
+          </Text>
         </View>
       </View>
 
