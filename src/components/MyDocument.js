@@ -90,12 +90,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-start',
     padding: '7px 9px',
-    fontSize: '7',
-    color: '#44434b',
     width: '475',
     height: '23',
     borderRadius: '1.8',
     backgroundColor: '#f4f6f7',
+
+    text: {
+      fontFamily: 'Roboto',
+      fontWeight: 500,
+      fontSize: '7',
+      color: '#44434b',
+    },
   },
 
   sectionProgress: {
@@ -238,6 +243,7 @@ const styles = StyleSheet.create({
   },
 
   sectionFeedback: {
+    marginLeft: '15pt',
     paddingTop: '26pt',
     paddingBottom: '23pt',
     flexDirection: 'row',
@@ -251,7 +257,7 @@ const styles = StyleSheet.create({
 
       title: {
         marginBottom: '40pt',
-        margin: '0 18pt',
+        margin: '0 17pt',
         fontFamily: 'Roboto',
         fontSize: '8pt',
         fontWeight: 500,
@@ -281,8 +287,59 @@ const styles = StyleSheet.create({
   sectionDevelopment: {
     padding: '38pt',
     paddingBottom: '10pt',
+
     img: {
       width: '100%',
+    },
+
+    legend: {
+      alignSelf: 'center',
+      width: '251pt',
+      paddingTop: '8pt',
+      marginTop: '28pt',
+      flexDirection: 'row',
+      justifyContent: 'center',
+      alignItems: 'center',
+      borderTop: '1pt solid #EAEAEA',
+
+      item: {
+        margin: '0 15pt',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+
+        circleRed: {
+          marginRight: '2.5pt',
+          backgroundColor: '#ff7f00',
+          width: '6pt',
+          height: '6pt',
+          borderRadius: 50,
+        },
+
+        circleBlue: {
+          marginRight: '2.5pt',
+          backgroundColor: '#059ef5',
+          width: '6pt',
+          height: '6pt',
+          borderRadius: 50,
+        },
+
+        circleGreen: {
+          marginRight: '2.5pt',
+          backgroundColor: '#30ea4f',
+          width: '6pt',
+          height: '6pt',
+          borderRadius: 50,
+        },
+
+        text: {
+          fontFamily: 'Roboto',
+          fontWeight: 400,
+          fontSize: '7.3pt',
+          letterSpacing: '0.07pt',
+          color: '#464646',
+        },
+      },
     },
   },
 
@@ -347,7 +404,7 @@ const MyDocument = () => (
 
       {/*  SECTION FEEDBACK HEADER  */}
       <View style={styles.sectionHeader}>
-        <Text>Amount of feedback</Text>
+        <Text style={styles.sectionHeader.text}>Amount of feedback</Text>
       </View>
 
       {/*  SECTION FEEDBACK  */}
@@ -375,7 +432,9 @@ const MyDocument = () => (
 
       {/*  SECTION HEADER  */}
       <View style={styles.sectionHeader}>
-        <Text>How Peter is doing at the moment</Text>
+        <Text style={styles.sectionHeader.text}>
+          How Peter is doing at the moment
+        </Text>
       </View>
 
       <View style={styles.sectionProgress}>
@@ -433,7 +492,7 @@ const MyDocument = () => (
 
       {/*  SECTION HEADER  */}
       <View style={styles.sectionHeader}>
-        <Text>Longterm development</Text>
+        <Text style={styles.sectionHeader.text}>Longterm development</Text>
       </View>
 
       {/* SECTION DEVELOPMENT */}
@@ -442,6 +501,34 @@ const MyDocument = () => (
           style={styles.sectionDevelopment.img}
           source={'/graph-placeholder.png'}
         />
+        <View style={styles.sectionDevelopment.legend}>
+          <View style={styles.sectionDevelopment.legend.item}>
+            <View
+              style={styles.sectionDevelopment.legend.item.circleRed}
+            ></View>
+            <Text style={styles.sectionDevelopment.legend.item.text}>
+              Attitude
+            </Text>
+          </View>
+
+          <View style={styles.sectionDevelopment.legend.item}>
+            <View
+              style={styles.sectionDevelopment.legend.item.circleBlue}
+            ></View>
+            <Text style={styles.sectionDevelopment.legend.item.text}>
+              Productivity
+            </Text>
+          </View>
+
+          <View style={styles.sectionDevelopment.legend.item}>
+            <View
+              style={styles.sectionDevelopment.legend.item.circleGreen}
+            ></View>
+            <Text style={styles.sectionDevelopment.legend.item.text}>
+              Teamworking
+            </Text>
+          </View>
+        </View>
       </View>
 
       {/*  FOOTER  */}
@@ -480,7 +567,9 @@ const MyDocument = () => (
       </View>
       {/*  SECTION HEADER  */}
       <View style={styles.sectionHeader}>
-        <Text>Average received feedback by users</Text>
+        <Text style={styles.sectionHeader.text}>
+          Average received feedback by users
+        </Text>
       </View>
 
       <View style={styles.comments}>
