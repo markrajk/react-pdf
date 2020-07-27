@@ -183,7 +183,7 @@ const styles = StyleSheet.create({
       },
 
       ratings: {
-        padding: '10 0 4',
+        padding: '7 0 4',
         margin: '0 10',
         borderBottom: '1pt solid #EAEAEA',
 
@@ -212,6 +212,7 @@ const styles = StyleSheet.create({
 
       body: {
         padding: '10pt',
+        paddingTop: '6pt',
         paddingBottom: '4pt',
 
         message: {
@@ -224,7 +225,7 @@ const styles = StyleSheet.create({
           color: '#383838',
 
           text: {
-            marginBottom: '8pt',
+            marginBottom: '6pt',
 
             span: {
               fontWeight: 500,
@@ -472,6 +473,244 @@ const MyDocument = () => (
       </View>
 
       <View style={styles.comments}>
+        {/* COMMENT */}
+        <View style={styles.comments.comment}>
+          {/* COMMENT HEADER */}
+          <View style={styles.comments.comment.header}>
+            <Image
+              style={styles.comments.comment.header.img}
+              source={'/user-placeholder.png'}
+            />
+
+            <Text style={styles.comments.comment.header.name}>Eve Larsson</Text>
+            <Text style={styles.comments.comment.header.amount}>
+              7 feedbacks
+            </Text>
+          </View>
+
+          {/* COMMENT RATINGS */}
+          <View style={styles.comments.comment.ratings}>
+            <View style={styles.comments.comment.ratings.item}>
+              <Text style={styles.comments.comment.ratings.item.name}>
+                Attitude:
+              </Text>
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+            </View>
+
+            <View style={styles.comments.comment.ratings.item}>
+              <Text style={styles.comments.comment.ratings.item.name}>
+                Productivity:
+              </Text>
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+            </View>
+
+            <View style={styles.comments.comment.ratings.item}>
+              <Text style={styles.comments.comment.ratings.item.name}>
+                Teamworking:
+              </Text>
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+            </View>
+          </View>
+
+          {/* COMMENT TEXT */}
+          <View style={styles.comments.comment.body}>
+            <View style={styles.comments.comment.body.message}>
+              <Text style={styles.comments.comment.body.message.text}>
+                <Text style={styles.comments.comment.body.message.text.span}>
+                  Compliments:
+                </Text>{' '}
+                Amazing presentation, Good translations, You are a great
+                colleague, A pleasure working with you
+              </Text>
+
+              <Text style={styles.comments.comment.body.message.text}>
+                <Text style={styles.comments.comment.body.message.text.span}>
+                  Improvers:
+                </Text>{' '}
+                Please clearer instructions for me, Don’t be so angry all the
+                time, Please start coming earlier to work
+              </Text>
+            </View>
+            <View style={styles.comments.comment.body.message}></View>
+          </View>
+        </View>
+
+        {/* COMMENT */}
+        <View style={styles.comments.comment}>
+          {/* COMMENT HEADER */}
+          <View style={styles.comments.comment.header}>
+            <Image
+              style={styles.comments.comment.header.img}
+              source={'/user-placeholder.png'}
+            />
+
+            <Text style={styles.comments.comment.header.name}>Eve Larsson</Text>
+            <Text style={styles.comments.comment.header.amount}>
+              7 feedbacks
+            </Text>
+          </View>
+
+          {/* COMMENT RATINGS */}
+          <View style={styles.comments.comment.ratings}>
+            <View style={styles.comments.comment.ratings.item}>
+              <Text style={styles.comments.comment.ratings.item.name}>
+                Attitude:
+              </Text>
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+            </View>
+
+            <View style={styles.comments.comment.ratings.item}>
+              <Text style={styles.comments.comment.ratings.item.name}>
+                Productivity:
+              </Text>
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+            </View>
+
+            <View style={styles.comments.comment.ratings.item}>
+              <Text style={styles.comments.comment.ratings.item.name}>
+                Teamworking:
+              </Text>
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+              <Image
+                style={styles.comments.comment.ratings.item.star}
+                source={'/star.png'}
+              />
+            </View>
+          </View>
+
+          {/* COMMENT TEXT */}
+          <View style={styles.comments.comment.body}>
+            <View style={styles.comments.comment.body.message}>
+              <Text style={styles.comments.comment.body.message.text}>
+                <Text style={styles.comments.comment.body.message.text.span}>
+                  Compliments:
+                </Text>{' '}
+                Amazing presentation, Good translations, You are a great
+                colleague, A pleasure working with you
+              </Text>
+
+              <Text style={styles.comments.comment.body.message.text}>
+                <Text style={styles.comments.comment.body.message.text.span}>
+                  Improvers:
+                </Text>{' '}
+                Please clearer instructions for me, Don’t be so angry all the
+                time, Please start coming earlier to work
+              </Text>
+            </View>
+            <View style={styles.comments.comment.body.message}></View>
+          </View>
+        </View>
+
         {/* COMMENT */}
         <View style={styles.comments.comment}>
           {/* COMMENT HEADER */}
