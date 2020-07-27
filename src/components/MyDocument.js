@@ -147,14 +147,14 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
 
     comment: {
-      marginBottom: '18pt',
+      marginBottom: '15pt',
       width: '230px',
       borderRadius: '2.5',
       // boxShadow: '0 3px 6px 0 rgba(226, 226, 226, 0.11)',
       border: '1 solid #eaeaea',
 
       header: {
-        paddingLeft: '10',
+        paddingLeft: '9',
         paddingRight: '14',
         paddingTop: '6',
         paddingBottom: '5',
@@ -169,7 +169,7 @@ const styles = StyleSheet.create({
         },
 
         name: {
-          marginLeft: '8',
+          marginLeft: '10',
           fontFamily: 'Roboto',
           fontSize: '8.8',
           fontWeight: 500,
@@ -184,8 +184,8 @@ const styles = StyleSheet.create({
       },
 
       ratings: {
-        padding: '7 0 4',
-        margin: '0 10',
+        padding: '7pt 0pt 4pt',
+        margin: '0 10pt',
         borderBottom: '1pt solid #EAEAEA',
 
         item: {
@@ -213,7 +213,7 @@ const styles = StyleSheet.create({
 
       body: {
         padding: '10pt',
-        paddingTop: '6pt',
+        paddingTop: '7pt',
         paddingBottom: '4pt',
 
         message: {
