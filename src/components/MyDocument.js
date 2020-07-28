@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
   sectionHeader: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'flex-start',
+    justifyContent: 'space-between',
     padding: '7px 9px',
     width: '475',
     height: '23',
@@ -100,6 +100,22 @@ const styles = StyleSheet.create({
       fontWeight: 500,
       fontSize: '7',
       color: '#44434b',
+
+      dropdown: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        fontFamily: 'Roboto',
+        fontWeight: 400,
+        fontSize: '7',
+        color: '#505d6c',
+
+        symbol: {
+          display: 'inline-block',
+          marginLeft: '4pt',
+          width: '4.5pt',
+          height: '2.9pt',
+        },
+      },
     },
   },
 
@@ -405,6 +421,13 @@ const MyDocument = () => (
       {/*  SECTION FEEDBACK HEADER  */}
       <View style={styles.sectionHeader}>
         <Text style={styles.sectionHeader.text}>Amount of feedback</Text>
+        <View style={styles.sectionHeader.text.dropdown}>
+          <Text>Amount of feedback</Text>
+          <Image
+            style={styles.sectionHeader.text.dropdown.symbol}
+            source={'/caret-down.png'}
+          />
+        </View>
       </View>
 
       {/*  SECTION FEEDBACK  */}
@@ -435,6 +458,13 @@ const MyDocument = () => (
         <Text style={styles.sectionHeader.text}>
           How Peter is doing at the moment
         </Text>
+        <View style={styles.sectionHeader.text.dropdown}>
+          <Text>This month averages</Text>
+          <Image
+            style={styles.sectionHeader.text.dropdown.symbol}
+            source={'/caret-down.png'}
+          />
+        </View>
       </View>
 
       <View style={styles.sectionProgress}>
@@ -493,6 +523,13 @@ const MyDocument = () => (
       {/*  SECTION HEADER  */}
       <View style={styles.sectionHeader}>
         <Text style={styles.sectionHeader.text}>Longterm development</Text>
+        <View style={styles.sectionHeader.text.dropdown}>
+          <Text>Last 9 months</Text>
+          <Image
+            style={styles.sectionHeader.text.dropdown.symbol}
+            source={'/caret-down.png'}
+          />
+        </View>
       </View>
 
       {/* SECTION DEVELOPMENT */}
@@ -570,6 +607,13 @@ const MyDocument = () => (
         <Text style={styles.sectionHeader.text}>
           Average received feedback by users
         </Text>
+        <View style={styles.sectionHeader.text.dropdown}>
+          <Text>6 per page</Text>
+          <Image
+            style={styles.sectionHeader.text.dropdown.symbol}
+            source={'/caret-down.png'}
+          />
+        </View>
       </View>
 
       <View style={styles.comments}>
